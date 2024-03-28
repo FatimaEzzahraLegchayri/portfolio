@@ -138,10 +138,11 @@ body{
 
 .btn-box{
     display: flex;
-    padding: 2%;
-    width: 70%;
-    display: flex;
     justify-content: center;
+   align-items: center;
+    padding: 2%;
+    width: 100vh;
+    margin: 0 auto;
 }
 .btn-box a~a:hover{
     background-color: green;
@@ -193,13 +194,6 @@ body{
 
 
 
-
-
-
-
-
-
-
 /* ////////////////////////////////////////////////// About //////////// */
 
 
@@ -230,14 +224,80 @@ body{
     width:50px;
     cursor: pointer;
 }
+.glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+  
+ @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #1a6f16, 0 0 40px #086a2c, 0 0 50px #086a2c, 0 0 60px #1b723b, 0 0 70px #00e608;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #086a2c, 0 0 70px #086a2c, 0 0 80px #086a2c;
+    }
+}
+
+
+/* ///////////////////////////////////////////icon bar //////////////////////////////*/
+
+.icon-bar {
+    width: 90px;  
+    position: fixed;  
+    top: 15em;  
+    left: 2.5em;  
+}
+  
+.icon-bar a {
+    display: block;  
+    text-align: center;  
+    padding: 16px; 
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 46px; 
+    background-color: rgb(17, 60, 12);
+    border-radius: 50px;
+    margin: 10px 0px 10px 0px
+}
+  
+.icon-bar .github:hover {
+    background-color: #000; /* Add a hover color */
+}
+.icon-bar .linkedin:hover {
+    background-color: #131d8b; /* Add a hover color */
+}
+.icon-bar .gmail:hover {
+    background-color: #780a0a; /* Add a hover color */
+}
+  
+.active {
+    background-color: #04AA6D; /* Add an active/current color */
+}
+
+
 /* ////////////////////////////////////////////////////skills */
+
+
 
 .title, .sub-title{
     text-align: center;
-    margin: 0%;
+    margin:  0%;
 }
 .nnm{
     display: flex;
+    width: 50%;
+    gap: 30px;
+    margin: 50px auto;
+}
+.flex-skils{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 .back{
     text-align: end;
@@ -294,26 +354,26 @@ font-size: 100%;
 
 /* Style for skill container */
 .skill-container {
-    display: flex; /* Use flexbox for layout */
-    justify-content: center; /* Center horizontally */
+    display: flex;  
+    justify-content: center; 
   }
   
   /* Style for front container */
-  .front {
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Arrange items in a column */
-  }
+.front {
+    display: flex;  
+    flex-direction: column;  
+}
   
   /* Style for individual icon */
   .icon {
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Align items vertically */
-    margin-bottom: 10px; /* Add some space between icons */
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 10px; 
   }
   
   /* Style for icon elements */
   .icon i {
-    margin-right: 10px; /* Add space between icon and text */
+    margin-right: 10px; 
   }
   
 #skill-conatiner-front{
@@ -335,7 +395,7 @@ font-size: 100%;
     color: rgb(24, 99, 179);
 }
 .front #html:hover{
-    color: yellow;
+    color:red;
 }
 
 .back #mongodb:hover{
@@ -344,125 +404,173 @@ font-size: 100%;
 .back #nodejs:hover{
     color: green;
 }
-.back #js:hover{
+.back .js:hover{
     color:yellow;
 }
+.back #react:hover{
+    color: rgb(24, 99, 179);
+}
+
 .back #tscript:hover{
-    color: rgb(7, 7, 163);
+    color: rgb(24, 99, 179);
 }
 
 /* //////////////////////////////////////////////////////////////////////////////JOURNEY////////////////// */
-.journey{
+
+#journey{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;  
     align-items: center;
+    font-size: 200px;  
+    margin-left: 270px;
 }
 
-
-/* //////////////////////////////////////////////// contact ////////////////// */
-.plans{
+.journey1{
+    width: 95px;
+    padding: 14px 28px;
+    font-size: 16px;
+    border-bottom: 1px solid green; 
+}
+/* Styles for the education and experience sections */
+.education, .experience {
     display: flex;
-    gap: 50px;
-    margin-top: 90px;
-    padding: 3%;
-    justify-content: space-between;
-}
-.plans button:hover{
-    background-color:  blueviolet;
+    flex-direction: column;
+    gap: 10px;  
+    padding: 10px;
+    width: 40%; 
+    flex: 1; /* Ensures both sections take up equal space */
 }
 
+/* Styles for the grid items within education and experience */
+.grid1 {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+}
 
+/* Styles for the journey title */
+.journey-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
 
+/* Styles for the journey subtitle */
+.journey-subtitle {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Styles for the journey date */
+.journey-date {
+    font-size: 12px;
+    color: #999;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .journey {
+        flex-direction: column;
+    }
+}
 
 
 /* //////////////////////////////////////////////// contact ////////////////// */
 
-.contact-form-container {
-    width: 300px;
-    margin: 0 auto;
+.contact-title{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 0px;
+
+}
+.contact-sub-title{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;  
+    padding: 12px;  
+    border: 1px solid black; 
+    border-radius: 6px;  
+    box-sizing: border-box;  
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical  
   }
   
-  #contact-form input[type="text"],
-  #contact-form input[type="email"],
-  #contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-  }
-  
-  #contact-form textarea {
-    height: 150px;
-  }
-  
-  #contact-form button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: green;
+    color: white;
+    padding: 12px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
   }
   
-  #contact-form button:hover {
-    background-color: #0056b3;
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
   }
   
-  #success-message {
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #28a745;
-    color: #fff;
-    text-align: center;
+  /* Add a background color and some padding around the form */
+.container {
     border-radius: 5px;
-  }
-   
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+  
 
-/* /////////////////////////////////////////////////////////// nav left ///////////// */
-.social-icons {
-  position: fixed;
-  top: 50%;
-  left: 20px; /* Adjust as needed */
-  transform: translateY(-50%);
-}
 
-.social-icons {
-  display: block;
-  width: 2%;
-  height: auto;
-  /* color: #000000; */
-  text-align: center;
-  line-height: 10px;
-  margin-bottom: 10px;
-  text-decoration: none; 
-  padding: 5px;
-}
 
-.social-icons .icon i {
-    background-color: green;
-  font-size: 50px;
-  text-decoration: none !important;
-    margin: 20px;
-}
-.social-icons {
-    background-color: #a5d3b0;
-    border: 2px solid black;
-    border-radius: 8px;
-    width: 70px;
-    
-}
-.social-icons a{
-    padding-right: 40%;
-}
-/* .social-icons .git:hover{
-    background-color: black;
-}
-.social-icons .bx{
-    display: block;
-    /* background-color: red; */
-    /* width: 40px;
-    height: 30px; */
-} */
+
+/* //////////////////////////////////////////////// contact ////////////////// */
+
+ @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+ /* body { background:rgb(30,30,40); } */
+ form { max-width:420px; margin:50px auto; }
+ 
+ .feedback-input {
+   color:white;
+   font-family: Helvetica, Arial, sans-serif;
+   font-weight:500;
+   font-size: 18px;
+   border-radius: 5px;
+   line-height: 22px;
+   background-color: transparent;
+   border:2px solid #CC6666;
+   transition: all 0.3s;
+   padding: 13px;
+   margin-bottom: 15px;
+   width:100%;
+   box-sizing: border-box;
+   outline:0;
+ }
+ 
+ .feedback-input:focus { border:2px solid #CC4949; }
+ 
+ textarea {
+   height: 150px;
+   line-height: 150%;
+   resize:vertical;
+ }
+ 
+ [type="submit"] {
+   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+   width: 100%;
+   background:#CC6666;
+   border-radius:5px;
+   border:0;
+   cursor:pointer;
+   color:white;
+   font-size:24px;
+   padding-top:10px;
+   padding-bottom:10px;
+   transition: all 0.3s;
+   margin-top:-4px;
+   font-weight:700;
+ }
+ [type="submit"]:hover { background:#CC4949; }
