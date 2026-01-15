@@ -1,0 +1,112 @@
+"use client"
+
+import { useEffect, useRef, useState } from "react"
+
+const stats = [
+  {
+    value: "50+",
+    label: "Projects Delivered",
+    description: "From startups to established businesses",
+    numericValue: 50,
+    suffix: "+",
+  },
+  {
+    value: "30+",
+    label: "Happy Clients",
+    description: "Entrepreneurs who trust the process",
+    numericValue: 30,
+    suffix: "+",
+  },
+  {
+    value: "98%",
+    label: "Success Rate",
+    description: "Projects launched on time and budget",
+    numericValue: 98,
+    suffix: "%",
+  },
+]
+
+export function Stats() {
+  const [animatedValues, setAnimatedValues] = useState([10, 10, 10])
+  const hasAnimatedRef = useRef(false)
+  const sectionRef = useRef<HTMLElement>(null)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !hasAnimatedRef.current) {
+            hasAnimatedRef.current = true
+
+            const duration = 2000 // 2 seconds
+            const startTime = Date.now()
+            const startValues = [10, 10, 10]
+            const targetValues = stats.map((stat) => stat.numericValue)
+
+            const animate = () => {
+              const elapsed = Date.now() - startTime
+              const progress = Math.min(elapsed / duration, 1)
+
+              // Easing function (ease-out)
+              const easeOut = 1 - Math.pow(1 - progress, 3)
+
+              const currentValues = targetValues.map((target, index) => {
+                const start = startValues[index]
+                const difference = target - start
+                return Math.floor(start + difference * easeOut)
+              })
+
+              setAnimatedValues(currentValues)
+
+              if (progress < 1) {
+                requestAnimationFrame(animate)
+              } else {
+                setAnimatedValues(targetValues)
+              }
+            }
+
+            animate()
+          }
+        })
+      },
+      {
+        threshold: 0.3,
+      }
+    )
+
+    const currentSection = sectionRef.current
+    if (currentSection) {
+      observer.observe(currentSection)
+    }
+
+    return () => {
+      if (currentSection) {
+        observer.unobserve(currentSection)
+      }
+    }
+  }, [])
+
+  return (
+    <section ref={sectionRef} className="py-24 sm:py-32 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-16">
+          <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-4">Track Record</p>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-balance">Proven Results</h2>
+        </div>
+
+        <div className="grid sm:grid-cols-3 gap-8 lg:gap-12">
+          {stats.map((stat, index) => (
+            <div key={index} className="text-center space-y-2">
+              <div className="text-5xl sm:text-6xl font-bold text-primary">
+                {animatedValues[index]}
+                {stat.suffix}
+              </div>
+              <div className="text-xl font-semibold">{stat.label}</div>
+              <p className="text-muted-foreground text-sm">{stat.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
