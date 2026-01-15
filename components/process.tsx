@@ -1,54 +1,44 @@
+"use client"
+
 import { Card } from "@/components/ui/card"
-import { Lightbulb, Map, Hammer, Rocket } from "lucide-react"
+import { Lightbulb, Map, Hammer, Rocket, LucideIcon } from "lucide-react"
+import { useI18n } from '@/app/context/I18nContext';
 
 export function Process() {
-  const steps = [
-    {
-      icon: Lightbulb,
-      title: "Discovery",
-      description:
-        "We start by understanding your vision, goals, and target audience. Every great project begins with clarity.",
-      step: "01",
-    },
-    {
-      icon: Map,
-      title: "Strategy",
-      description: "I develop a clear roadmap with milestones, timelines, and technical specifications. No surprises.",
-      step: "02",
-    },
-    {
-      icon: Hammer,
-      title: "Build",
-      description: "Clean code, modern tech, and constant communication. You'll see progress every step of the way.",
-      step: "03",
-    },
-    {
-      icon: Rocket,
-      title: "Launch",
-      description:
-        "We deploy your project with confidence, ensuring everything works perfectly and you're set up for success.",
-      step: "04",
-    },
-  ]
+  const { t } = useI18n()
+
+  const iconMap: Record<string, LucideIcon> = {
+    Lightbulb,
+    Map,
+    Hammer,
+    Rocket,
+  }
+
+  const steps = (t("process.steps") || []) as Array<{
+    icon: string
+    title: string
+    description: string
+    step: string
+  }>
 
   return (
     <section id="process" className="py-24 sm:py-32 px-4 sm:px-6 lg:px-8 bg-muted/30">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-4">Process</p>
+          <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-4">{t("process.sectionLabel")}</p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-balance">
-            From <span className="text-primary">Concept to Cash Flow</span>
+            {t("process.title.line1")} <span className="text-primary">{t("process.title.highlight")}</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty leading-relaxed">
-            A systematic approach that transforms your vision into self-running systems that generate results.
+            {t("process.subtitle")}
           </p>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {steps.map((step, index) => {
-            const Icon = step.icon
+            const Icon = iconMap[step.icon] || Lightbulb
             return (
-              <div key={step.step} className="relative">
+              <div key={step.step || index} className="relative">
                 {index < steps.length - 1 && (
                   <div
                     className="hidden lg:block absolute top-16 left-full w-full h-0.5 bg-border"

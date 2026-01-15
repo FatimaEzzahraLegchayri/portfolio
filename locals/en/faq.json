@@ -1,0 +1,37 @@
+{
+  "faq": {
+    "sectionLabel": "FAQ",
+    "title": {
+      "line1": "Common Questions",
+      "highlight": "Clear Answers"
+    },
+    "subtitle": "Everything you need to know before we work together. Still have questions? Let's talk.",
+    "items": [
+      {
+        "question": "How long does a typical project take?",
+        "answer": "Typical projects take around 2-4 weeks, with delivery timelines shaped by project complexity."
+      },
+      {
+        "question": "How much does it cost?",
+        "answer": "Pricing varies by project scope and complexity, and is defined after understanding your goals and requirements."
+      },
+      {
+        "question": "What if I need changes or updates after launch?",
+        "answer": "Post-launch updates are supported and handled based on your needs, whether it's refinements, improvements, or new features."
+      },
+      {
+        "question": "What makes your approach different?",
+        "answer": "I focus on business outcomes, not just code. Every system is built to free your time and drive growth."
+      },
+      {
+        "question": "How do I get started?",
+        "answer": "Start with a free 30-minute strategy call. We'll discuss your challenges, goals, and how I can help. No pressure - just clarity on whether we're a good fit. If we move forward, I'll provide a detailed proposal with timeline and investment."
+      }
+    ],
+    "cta": {
+      "title": "Ready to get started?",
+      "subtitle": "Book a free 30-minute strategy call to discuss your project and see how we can transform your operations.",
+      "button": "Book Your Free Call"
+    }
+  }
+}

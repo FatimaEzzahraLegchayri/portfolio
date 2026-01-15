@@ -1,0 +1,29 @@
+{
+  "stats": {
+    "sectionLabel": "Track Record",
+    "title": "Proven Results",
+    "items": [
+      {
+        "value": "50+",
+        "label": "Projects Delivered",
+        "description": "From startups to established businesses",
+        "numericValue": 50,
+        "suffix": "+"
+      },
+      {
+        "value": "30+",
+        "label": "Happy Clients",
+        "description": "Entrepreneurs who trust the process",
+        "numericValue": 30,
+        "suffix": "+"
+      },
+      {
+        "value": "98%",
+        "label": "Success Rate",
+        "description": "Projects launched on time and budget",
+        "numericValue": 98,
+        "suffix": "%"
+      }
+    ]
+  }
+}

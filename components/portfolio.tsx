@@ -1,8 +1,12 @@
+"use client"
+
 import { Card } from "@/components/ui/card"
 import { ExternalLink } from "lucide-react"
 import Link from "next/link"
+import { useI18n } from '@/app/context/I18nContext';
 
 export function Portfolio() {
+  const { t } = useI18n()
   const projects = [
     {
       title:  "Art Space",
@@ -52,12 +56,12 @@ export function Portfolio() {
     <section id="projects" className="py-24 sm:py-32 px-4 sm:px-6 lg:px-8 bg-muted/30">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-4">Latest Projects</p>
+          <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-4">{t("portfolio.sectionLabel")}</p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-balance">
-            Remarkable Outcomes, <span className="italic font-serif">Elegant Execution</span>
+            {t("portfolio.title.line1")}, <span className="italic font-serif">{t("portfolio.title.highlight")}</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty leading-relaxed">
-            Real projects that delivered real results for entrepreneurs and businesses.
+            {t("portfolio.subtitle")}
           </p>
         </div>
 

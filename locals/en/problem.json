@@ -1,0 +1,30 @@
+{
+  "problem": {
+    "sectionLabel": "The Challenge",
+    "title": "You Built a Business, Not a Job",
+    "card": {
+      "title": "The Problem",
+      "items": [
+        "Time drained by manual operations",
+        "A business that only runs when you're involved",
+        "Brilliant concepts sabotaged by weak implementation",
+        "Spending hours babysitting systems instead of scaling",
+        "Websites that look good but don't generate revenue"
+      ]
+    },
+    "solution": {
+      "title": "The Solution",
+      "items": [
+        "Self-running operations that remove day-to-day friction",
+        "A reliable foundation that performs 24/7 — without supervision",
+        "Self-running workflows that operate independently",
+        "High-converting sites that sell while you focus elsewhere",
+        "Intelligent infrastructure that performs 24/7"
+      ]
+    },
+    "narrative": {
+      "text": "I help entrepreneurs stop managing their business manually and start scaling automatically through",
+      "highlight": "smart websites and self-running systems."
+    }
+  }
+}

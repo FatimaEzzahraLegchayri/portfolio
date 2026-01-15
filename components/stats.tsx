@@ -1,35 +1,21 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
-
-const stats = [
-  {
-    value: "50+",
-    label: "Projects Delivered",
-    description: "From startups to established businesses",
-    numericValue: 50,
-    suffix: "+",
-  },
-  {
-    value: "30+",
-    label: "Happy Clients",
-    description: "Entrepreneurs who trust the process",
-    numericValue: 30,
-    suffix: "+",
-  },
-  {
-    value: "98%",
-    label: "Success Rate",
-    description: "Projects launched on time and budget",
-    numericValue: 98,
-    suffix: "%",
-  },
-]
+import { useI18n } from '@/app/context/I18nContext';
 
 export function Stats() {
+  const { t } = useI18n()
   const [animatedValues, setAnimatedValues] = useState([10, 10, 10])
   const hasAnimatedRef = useRef(false)
   const sectionRef = useRef<HTMLElement>(null)
+
+  const stats = (t("stats.items") || []) as Array<{
+    value: string
+    label: string
+    description: string
+    numericValue: number
+    suffix: string
+  }>
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -90,8 +76,8 @@ export function Stats() {
     <section ref={sectionRef} className="py-24 sm:py-32 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-4">Track Record</p>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-balance">Proven Results</h2>
+          <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-4">{t("stats.sectionLabel")}</p>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-balance">{t("stats.title")}</h2>
         </div>
 
         <div className="grid sm:grid-cols-3 gap-8 lg:gap-12">

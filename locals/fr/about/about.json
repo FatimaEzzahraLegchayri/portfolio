@@ -1,0 +1,122 @@
+{
+  "about": {
+    "opening": {
+      "title": {
+        "line1": "Je construis des systèmes qui",
+        "highlight": "éliminent le travail manuel"
+      },
+      "subtitle": "Pour les business locales, je crée des sites web et des automatisations qui transforment les visiteurs en clients et les processus manuels en opérations autonomes."
+    },
+    "perspective": {    
+      "paragraph1": "La plupart des business luttent avec les systèmes, pas seulement les sites web. Un beau site qui ne convertit pas est inutile. Les processus manuels qui mangent votre temps limitent la croissance. Les outils qui ne communiquent pas entre eux créent le chaos.",
+      "paragraph2": "Je me concentre sur l'efficacité, l'automatisation et la clarté. Chaque système que je construis fonctionne de manière indépendante, connecte vos outils de manière transparente et transforme le travail manuel en workflows automatisés. Le résultat : vous récupérez du temps et votre entreprise scal sans ajouter de frais généraux."
+    },
+    "whatIDo": {
+      "title": "Ce que je fais",
+      "subtitle": "Services de base pour les entreprises qui ont besoin de systèmes, pas seulement de sites web.",
+      "services": [
+        {
+          "icon": "Globe",
+          "title": "Sites web personnalisés",
+          "description": "Des sites web axés sur la conversion, conçus pour votre entreprise. Structure claire, performances rapides et résultats qui scalent."
+        },
+        {
+          "icon": "Zap",
+          "title": "Automatisation business",
+          "description": "Systèmes internes qui éliminent le travail manuel. Workflows automatisés qui gèrent les tâches routinières sans supervision."
+        },
+        {
+          "icon": "Target",
+          "title": "UX axée sur la conversion",
+          "description": "Chaque élément optimisé pour transformer les visiteurs en clients. Design basé sur les données qui améliore les résultats, pas seulement l'esthétique."
+        },
+        {
+          "icon": "Settings",
+          "title": "Intégration d'outils et de systèmes",
+          "description": "Connectez vos outils existants en workflows fluides. CRMs, systèmes de réservation — travaillant ensemble."
+        }
+      ]
+    },
+    "proofOfWork": {
+      "title": "Preuve de travail",
+      "subtitle": "De vrais problèmes résolus pour de vraies entreprises. Axé sur les résultats, pas sur les fonctionnalités.",
+      "items": [
+        {
+          "client": "Entreprise d'ateliers",
+          "problem": "La gestion manuelle des réservations consommait plus de 15 heures par semaine",
+          "solution": "Système de réservation automatisé avec traitement des paiements et confirmations par email",
+          "outcome": "Temps réduit à 30 minutes par semaine. Les réservations ont augmenté de 40% au premier trimestre."
+        },
+        {
+          "client": "Prestataire de services local",
+          "problem": "Le site web avait l'air bien mais ne générait aucun lead",
+          "solution": "Refonte du parcours de conversion avec proposition de valeur claire et réservation simplifiée",
+          "outcome": "Le site web convertit maintenant 8% des visiteurs en rendez-vous réservés."
+        },
+        {
+          "client": "Petite entreprise de vente au détail",
+          "problem": "Trois systèmes séparés nécessitant une saisie manuelle de données",
+          "solution": "Intégration de l'inventaire, du TPE et de la boutique en ligne en un seul workflow automatisé",
+          "outcome": "Éliminé 10 heures de travail administratif par semaine. Erreurs réduites de 95%."
+        }
+      ],
+      "labels": {
+        "problem": "Problème",
+        "solution": "Solution",
+        "outcome": "Résultat"
+      }
+    },
+    "howIWork": {
+      "title": "Comment je travaille",
+      "subtitle": "Processus structuré. Communication claire. Des systèmes qui fonctionnent dès le premier jour.",
+      "steps": [
+        {
+          "step": "01",
+          "title": "Comprendre vos opérations",
+          "description": "J'examine vos processus actuels, identifie les points de friction et cartographie ce qui doit changer."
+        },
+        {
+          "step": "02",
+          "title": "Concevoir la solution",
+          "description": "Plan clair décrivant le système, les intégrations et les workflows. Pas de surprises, juste de la clarté."
+        },
+        {
+          "step": "03",
+          "title": "Construire et intégrer",
+          "description": "Développer le système, connecter vos outils et tester minutieusement. Vous voyez les progrès à chaque étape."
+        },
+        {
+          "step": "04",
+          "title": "Lancer et documenter",
+          "description": "Déployer le système, former votre équipe et fournir la documentation. Ensuite, il fonctionne de manière indépendante."
+        }
+      ]
+    },
+    "whoItsFor": {
+      "title": "Pour qui c'est",
+      "subtitle": "Ajustement clair, limites claires. Meilleurs résultats pour tous.",
+      "goodFit": {
+        "title": "Bien adapté",
+        "items": [
+          "Petites et moyennes entreprises aux opérations claires",
+          "Prestataires de services qui veulent scal sans embaucher",
+          "Entreprises consacrant beaucoup de temps aux tâches manuelles",
+          "Entreprises prêtes à investir dans des systèmes durables"
+        ]
+      },
+      "notGoodFit": {
+        "title": "Pas bien adapté",
+        "items": [
+          "Idées en phase initiale sans processus définis",
+          "Projets nécessitant une maintenance quotidienne",
+          "Entreprises nécessitant des conseils continus approfondis"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Prêt à construire un système qui fonctionne ?",
+      "subtitle": "Si votre entreprise correspond au profil ci-dessus, discutons de votre projet. Je fournirai une proposition claire avec délais et portée.",
+      "button": "Démarrer un projet"
+    }
+  }
+}

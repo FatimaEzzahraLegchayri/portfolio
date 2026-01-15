@@ -1,0 +1,21 @@
+{
+  "footer": {
+    "brand": "Développeuse",
+    "description": "J'équipe les entrepreneurs de systèmes qui libèrent leur temps et amplifient leurs profits. Conception de solutions digitales qui fonctionnent de manière autonome — pour que vous puissiez vous concentrer sur le scaling de votre impact, pas sur la gestion de votre infrastructure.",
+    "quickLinks": {
+      "title": "Liens rapides",
+      "services": "Services",
+      "process": "Processus",
+      "portfolio": "Portfolio"
+    },
+    "contact": {
+      "title": "Contact",
+      "bookCall": "Réserver un appel",
+      "email": "Email",
+      "linkedin": "LinkedIn"
+    },
+    "rights": "Tous droits réservés.",
+    "privacy": "Confidentialité",
+    "terms": "Conditions"
+  }
+}

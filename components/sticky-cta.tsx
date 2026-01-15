@@ -4,8 +4,10 @@ import { Button } from "@/components/ui/button"
 import { Calendar } from "lucide-react"
 import { useEffect, useState } from "react"
 import Link from "next/link"
+import { useI18n } from '@/app/context/I18nContext';
 
 export function StickyCTA() {
+  const { t } = useI18n()
   const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
@@ -39,17 +41,11 @@ export function StickyCTA() {
       <div className="bg-background/95 backdrop-blur-lg border-t border-border shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex items-center justify-center">
-            {/* <div className="flex-1 min-w-[200px]">
-              <h3 className="text-sm sm:text-base font-semibold mb-1">Ready to start building?</h3>
-              <p className="text-xs sm:text-sm text-muted-foreground">
-                Book a free call and turn your idea into reality
-              </p>
-            </div> */}
             <Link href="https://calendly.com/fatima-ezzahra/free-strategy-call">
-            <Button size="lg" className="group whitespace-nowrap">
-              <Calendar className="w-4 h-4 mr-2" />
-              See What’s Blocking You
-            </Button>
+              <Button size="lg" className="group whitespace-nowrap">
+                <Calendar className="w-4 h-4 mr-2" />
+                {t("stickyCta.button")}
+              </Button>
             </Link>
           </div>
         </div>

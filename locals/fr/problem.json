@@ -1,0 +1,30 @@
+{
+  "problem": {
+    "sectionLabel": "Le défi",
+    "title": "Vous avez construit un business, pas un emploi",
+    "card": {
+      "title": "Le problème",
+      "items": [
+        "Un temps perdu dans des opérations manuelles",
+        "Une entreprise qui ne fonctionne que lorsque vous êtes impliqué(e)",
+        "Des concepts brillants sabotés par une mauvaise exécution",
+        "Des heures passées à surveiller des systèmes au lieu de scaler",
+        "Des sites élégants qui ne génèrent pas de revenus"
+      ]
+    },
+    "solution": {
+      "title": "La solution",
+      "items": [
+        "Des opérations autonomes qui éliminent les frictions quotidiennes",
+        "Une base fiable qui fonctionne 24/7 — sans supervision",
+        "Des workflows autonomes qui opèrent indépendamment",
+        "Des sites à forte conversion qui vendent pendant que vous vous concentrez ailleurs",
+        "Une infrastructure intelligente qui performe 24/7"
+      ]
+    },
+    "narrative": {
+      "text": "J'aide les entrepreneurs à arrêter la gestion manuelle de leur business et à scaler automatiquement grâce à",
+      "highlight": "des sites intelligents et des systèmes autonomes."
+    }
+  }
+}

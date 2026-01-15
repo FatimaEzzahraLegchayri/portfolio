@@ -1,0 +1,33 @@
+{
+    "service": {
+      "sectionLabel": "Services",
+      "title": "Digital Solutions That Operate Independently",
+      "subtitle":
+        "Whether you need a high-converting site or time-saving automation — I develop infrastructure that performs while you focus on what matters.",
+  
+      "items": [
+        {
+          "icon": "Globe",
+          "number": "01",
+          "title": "Website Development",
+          "description":
+            "Engaging, responsive websites that drive conversions. Built with modern tech and optimized for performance."
+        },
+        {
+          "icon": "Zap",
+          "number": "02",
+          "title": "MVP & Product Build",
+          "description":
+            "Launch your product idea fast. From concept to working prototype, I build MVPs that validate your vision."
+        },
+        {
+          "icon": "Target",
+          "number": "03",
+          "title": "Automation & Systems",
+          "description":
+            "Transform manual processes into self-running workflows. Automation sequences that liberate your schedule and amplify profits."
+        }
+      ]
+    }
+  }
+  

@@ -1,0 +1,122 @@
+{
+  "about": {
+    "opening": {
+      "title": {
+        "line1": "I Build Systems That",
+        "highlight": "Eliminate Manual Work"
+      },
+      "subtitle": "For small and local businesses, I create websites and automation that convert visitors into clients and manual processes into self-running operations."
+    },
+    "perspective": {
+      "paragraph1": "Most businesses struggle with systems, not just websites. A beautiful site that doesn't convert is useless. Manual processes that eat your time limit growth. Tools that don't talk to each other create chaos.",
+      "paragraph2": "I focus on efficiency, automation, and clarity. Every system I build operates independently, connects your tools seamlessly, and turns manual work into automated workflows. The result: you get time back and your business scales without adding overhead."
+    },
+    "whatIDo": {
+      "title": "What I Do",
+      "subtitle": "Core services for businesses that need systems, not just websites.",
+      "services": [
+        {
+          "icon": "Globe",
+          "title": "Custom Websites",
+          "description": "Conversion-focused websites built for your business. Clear structure, fast performance, and results that scale."
+        },
+        {
+          "icon": "Zap",
+          "title": "Business Automation",
+          "description": "Internal systems that eliminate manual work. Automated workflows that handle routine tasks without supervision."
+        },
+        {
+          "icon": "Target",
+          "title": "Conversion-Focused UX",
+          "description": "Every element optimized to turn visitors into clients. Data-driven design that improves outcomes, not just aesthetics."
+        },
+        {
+          "icon": "Settings",
+          "title": "Tool & System Integration",
+          "description": "Connect your existing tools into seamless workflows. CRMs, booking systems — working together."
+        }
+      ]
+    },
+    "proofOfWork": {
+      "title": "Proof of Work",
+      "subtitle": "Real problems solved for real businesses. Focused on outcomes, not features.",
+      "items": [
+        {
+          "client": "Workshop Business",
+          "problem": "Manual booking management consumed 15+ hours weekly",
+          "solution": "Automated booking system with payment processing and email confirmations",
+          "outcome": "Time reduced to 30 minutes per week. Bookings increased 40% in first quarter."
+        },
+        {
+          "client": "Local Service Provider",
+          "problem": "Website looked good but generated zero leads",
+          "solution": "Redesigned conversion flow with clear value proposition and streamlined booking",
+          "outcome": "Website now converts 8% of visitors into booked appointments."
+        },
+        {
+          "client": "Small Retail Business",
+          "problem": "Three separate systems requiring manual data entry",
+          "solution": "Integrated inventory, POS, and online store into single automated workflow",
+          "outcome": "Eliminated 10 hours of weekly admin work. Errors reduced by 95%."
+        }
+      ],
+      "labels": {
+        "problem": "Problem",
+        "solution": "Solution",
+        "outcome": "Outcome"
+      }
+    },
+    "howIWork": {
+      "title": "How I Work",
+      "subtitle": "Structured process. Clear communication. Systems that work from day one.",
+      "steps": [
+        {
+          "step": "01",
+          "title": "Understand Your Operations",
+          "description": "I review your current processes, identify friction points, and map what needs to change."
+        },
+        {
+          "step": "02",
+          "title": "Design the Solution",
+          "description": "Clear plan outlining the system, integrations, and workflows. No surprises, just clarity."
+        },
+        {
+          "step": "03",
+          "title": "Build & Integrate",
+          "description": "Develop the system, connect your tools, and test thoroughly. You see progress at each stage."
+        },
+        {
+          "step": "04",
+          "title": "Launch & Document",
+          "description": "Deploy the system, train your team, and provide documentation. Then it runs independently."
+        }
+      ]
+    },
+    "whoItsFor": {
+      "title": "Who This Is For",
+      "subtitle": "Clear fit, clear boundaries. Better outcomes for everyone.",
+      "goodFit": {
+        "title": "Good Fit",
+        "items": [
+          "Small to medium businesses with clear operations",
+          "Service providers who want to scale without hiring",
+          "Businesses spending significant time on manual tasks",
+          "Companies ready to invest in systems that last"
+        ]
+      },
+      "notGoodFit": {
+        "title": "Not a Good Fit",
+        "items": [
+          "Early-stage ideas without defined processes",
+          "Projects requiring daily hands-on maintenance",
+          "Companies needing extensive ongoing consulting"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Ready to Build a System That Works?",
+      "subtitle": "If your business fits the profile above, let's discuss your project. I'll provide a clear proposal with timeline and scope.",
+      "button": "Start a Project"
+    }
+  }
+}

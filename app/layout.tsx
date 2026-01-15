@@ -2,15 +2,16 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { I18nProvider } from "./context/I18nContext"
 import "./globals.css"
 
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Portfolio | Turn Ideas Into Real Income",
+  title: "Portfolio | Websites & Systems That Fix How Businesses Operate",
   description:
-    "Developer & systems builder helping entrepreneurs transform ideas into profitable digital products. Build systems that free your time and multiply your income.",
+    "Custom websites and automation systems built for small and local businesses to reduce manual work, improve operations, and increase conversions.",
   generator: "v0.app",
   icons: {
     icon: [
@@ -39,7 +40,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`font-sans antialiased`}>
-        {children}
+        <I18nProvider defaultLocale="en">
+          {children}
+        </I18nProvider>
         <Analytics />
       </body>
     </html>

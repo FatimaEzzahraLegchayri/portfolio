@@ -10,14 +10,17 @@ import {
   SheetTitle,
 } from "@/components/ui/sheet"
 import { Button } from "@/components/ui/button"
+import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@/components/ui/select"
+import { useI18n } from '../app/context/I18nContext';
+import { Globe } from "lucide-react"
 
 export function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
+  const { t, locale, changeLocale } = useI18n()
   const navLinks = [
-    { href: "/#services", label: "Services" },
-    { href: "/#projects", label: "Projects" },
-    { href: "/about", label: "About" },
+    { href: "/#services", label: t("navigation.links.services") },
+    { href: "/#projects", label: t("navigation.links.projects") },
+    { href: "/about", label: t("navigation.links.about") },
   ]
 
   return (
@@ -26,7 +29,7 @@ export function Navigation() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <span className="text-xl font-bold text-foreground">FZ.</span>
+            <span className="text-xl font-bold text-foreground">{t("navigation.logo")}</span>
           </div>
 
           {/* Desktop Navigation links */}
@@ -44,10 +47,34 @@ export function Navigation() {
 
           {/* Right side - Theme toggle, CTA, and Mobile menu button */}
           <div className="flex items-center gap-3">
+          
+          <Select value={locale} onValueChange={changeLocale}>
+                <SelectTrigger className="w-[100px] h-9">
+                  <Globe className="w-4 h-4 mr-2" />
+                  <SelectValue>
+                    {locale === 'en' ? 'EN' : locale === 'fr' ? 'FR' : 'FR'}
+                  </SelectValue>
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="en">
+                    <div className="flex items-center gap-2">
+                      <span>🇬🇧</span>
+                      <span>English</span>
+                    </div>
+                  </SelectItem>
+                  <SelectItem value="fr">
+                    <div className="flex items-center gap-2">
+                      <span>🇫🇷</span>
+                      <span>Français</span>
+                    </div>
+                  </SelectItem>
+                </SelectContent>
+              </Select>
+
             <ThemeToggle />
             <a href="https://calendly.com/fatima-ezzahra/free-strategy-call" className="hidden md:block">
               <button className="cursor-pointer px-6 py-2 bg-primary text-primary-foreground rounded-full text-sm font-medium hover:opacity-90 transition-opacity">
-                Get In Touch
+                {t("navigation.cta")}
               </button>
             </a>
             
@@ -69,7 +96,7 @@ export function Navigation() {
       <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
         <SheetContent side="right" className="w-[300px] sm:w-[400px]">
           <SheetHeader>
-            <SheetTitle className="text-left">Menu</SheetTitle>
+            <SheetTitle className="text-left">{t("navigation.menu")}</SheetTitle>
           </SheetHeader>
           <div className="flex flex-col gap-4 mt-8 px-5">
             {navLinks.map((link) => (
@@ -89,7 +116,7 @@ export function Navigation() {
                 className="block"
               >
                 <Button className="w-full">
-                  Get In Touch
+                  {t("navigation.cta")}
                 </Button>
               </a>
             </div>

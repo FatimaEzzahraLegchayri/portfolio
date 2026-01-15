@@ -1,0 +1,12 @@
+{
+  "navigation": {
+    "logo": "FZ.",
+    "links": {
+      "services": "Services",
+      "projects": "Projects",
+      "about": "About"
+    },
+    "cta": "Get In Touch",
+    "menu": "Menu"
+  }
+}

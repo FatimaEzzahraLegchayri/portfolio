@@ -1,0 +1,53 @@
+{
+  "testimonials": {
+    "sectionLabel": "Témoignages",
+    "title": {
+      "line1": "Approuvé par des entrepreneurs qui ",
+      "highlight": "se développent sans chaos"
+    },
+    "subtitle": "De vrais résultats d'entrepreneurs qui ont transformé leurs opérations et accéléré leur croissance.",
+    "trust": {
+      "before": "Rejoignez ",
+      "number": "30+",
+      "after": " entrepreneurs qui ont transformé leurs opérations"
+    },
+    "items": [
+      {
+        "name": "Sarah El Ouakil",
+        "role": "Fondatrice, Artisan Workshop Co.",
+        "content": "Le système d'automatisation a libéré plus de 15 heures par semaine. Je suis passée de la gestion manuelle de chaque réservation à me concentrer sur le scaling de mon activité. Le chiffre d'affaires a augmenté de 40% au premier trimestre.",
+        "rating": 5
+      },
+      {
+        "name": "Mohammed El Ouali",
+        "role": "PDG, Budget Tracker Platform",
+        "content": "Du concept au lancement en 6 semaines. Le MVP a validé notre idée plus rapidement que prévu, et l'infrastructure gère la croissance sans problème. Le meilleur investissement que nous ayons fait.",
+        "rating": 5
+      },
+      {
+        "name": "Loubna El Boussiri",
+        "role": "Propriétaire, Craft Studio",
+        "content": "Notre site web est passé d'une brochure à un moteur de vente. Les réservations ont augmenté de 200% le premier mois. Le système fonctionne seul — je vérifie une fois par semaine, pas tous les jours.",
+        "rating": 5
+      },
+      {
+        "name": "Karima Alami",
+        "role": "Entrepreneuse, My Space",
+        "content": "Enfin, un développeur qui comprend les résultats business, pas seulement le code. L'automatisation a remplacé 3 processus manuels et réduit les coûts opérationnels de 30%. Un changement majeur.",
+        "rating": 5
+      },
+      {
+        "name": "Ayoub Zein",
+        "role": "Fondateur, Atelier Zein",
+        "content": "Professionnel, axé sur les résultats et véritablement investi dans notre succès. Le site web convertit les visiteurs en clients de manière constante. Nous avons scalé sans ajouter de personnel.",
+        "rating": 5
+      },
+      {
+        "name": "Zineb Motaki",
+        "role": "Fondatrice de startup",
+        "content": "Les systèmes fonctionnent 24/7 sans supervision. Je peux me concentrer sur la stratégie au lieu des opérations. C'est exactement ce dont j'avais besoin pour scaler — une infrastructure fiable qui performe.",
+        "rating": 5
+      }
+    ]
+  }
+}

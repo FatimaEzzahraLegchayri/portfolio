@@ -1,0 +1,21 @@
+{
+  "footer": {
+    "brand": "Developer",
+    "description": "I equip business owners with systems that liberate their schedule and amplify their profits. Engineering digital solutions that operate independently — so you can focus on scaling your impact, not managing your infrastructure.",
+    "quickLinks": {
+      "title": "Quick Links",
+      "services": "Services",
+      "process": "Process",
+      "portfolio": "Portfolio"
+    },
+    "contact": {
+      "title": "Contact",
+      "bookCall": "Book a Call",
+      "email": "Email",
+      "linkedin": "LinkedIn"
+    },
+    "rights": "All rights reserved.",
+    "privacy": "Privacy",
+    "terms": "Terms"
+  }
+}

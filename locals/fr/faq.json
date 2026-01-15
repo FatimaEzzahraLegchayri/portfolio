@@ -1,0 +1,37 @@
+{
+  "faq": {
+    "sectionLabel": "FAQ",
+    "title": {
+      "line1": "Questions courantes",
+      "highlight": "Réponses claires"
+    },
+    "subtitle": "Tout ce que vous devez savoir avant de travailler ensemble. Vous avez encore des questions ? Parlons-en.",
+    "items": [
+      {
+        "question": "Combien de temps prend un projet typique ?",
+        "answer": "Les projets typiques prennent environ 2-4 semaines, avec des délais de livraison déterminés par la complexité du projet."
+      },
+      {
+        "question": "Combien ça coûte ?",
+        "answer": "Les tarifs varient selon la portée et la complexité du projet, et sont définis après avoir compris vos objectifs et exigences."
+      },
+      {
+        "question": "Et si j'ai besoin de modifications ou de mises à jour après le lancement ?",
+        "answer": "Les mises à jour post-lancement sont prises en charge et gérées selon vos besoins, qu'il s'agisse de raffinements, d'améliorations ou de nouvelles fonctionnalités."
+      },
+      {
+        "question": "Qu'est-ce qui rend votre approche différente ?",
+        "answer": "Je me concentre sur les résultats business, pas seulement sur le code. Chaque système est construit pour libérer votre temps et stimuler la croissance."
+      },
+      {
+        "question": "Comment puis-je commencer ?",
+        "answer": "Commencez par un appel stratégique gratuit de 30 minutes. Nous discuterons de vos défis, objectifs et de la façon dont je peux vous aider. Pas de pression - juste de la clarté sur notre compatibilité. Si nous avançons, je fournirai une proposition détaillée avec délais et investissement."
+      }
+    ],
+    "cta": {
+      "title": "Prêt à commencer ?",
+      "subtitle": "Réservez un appel stratégique gratuit de 30 minutes pour discuter de votre projet et voir comment nous pouvons transformer vos opérations.",
+      "button": "Réserver votre appel gratuit"
+    }
+  }
+}

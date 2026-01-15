@@ -1,0 +1,33 @@
+{
+    "service": {
+      "sectionLabel": "Services",
+      "title": "Des solutions digitales qui fonctionnent de manière autonome",
+      "subtitle":
+        "Que vous ayez besoin d’un site à forte conversion ou d’automatisations qui font gagner du temps — je développe des infrastructures qui performent pendant que vous vous concentrez sur l’essentiel.",
+  
+      "items": [
+        {
+          "icon": "Globe",
+          "number": "01",
+          "title": "Développement de sites web",
+          "description":
+            "Des sites modernes et responsives conçus pour convertir. Construits avec des technologies actuelles et optimisés pour la performance."
+        },
+        {
+          "icon": "Zap",
+          "number": "02",
+          "title": "MVP & création de produit",
+          "description":
+            "Lancez rapidement votre idée de produit. Du concept au prototype fonctionnel, je construis des MVP pour valider votre vision."
+        },
+        {
+          "icon": "Target",
+          "number": "03",
+          "title": "Automatisation & systèmes",
+          "description":
+            "Transformez les processus manuels en workflows autonomes. Des automatisations qui libèrent votre temps et amplifient les résultats."
+        }
+      ]
+    }
+  }
+  

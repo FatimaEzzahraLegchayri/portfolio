@@ -3,9 +3,10 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Code2 } from "lucide-react"
 import { InteractiveParticles } from "./interactive-particles"
-import Link from "next/link"
+import { useI18n } from '@/app/context/I18nContext';
 
 export function Hero() {
+  const { t } = useI18n()
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden pt-16">
       <InteractiveParticles />
@@ -17,17 +18,18 @@ export function Hero() {
           {/* Top badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/50 border border-border">
             <Code2 className="w-4 h-4 text-foreground" />
-            <span className="text-sm font-medium text-foreground">Developer & Systems Builder</span>
+            <span className="text-sm font-medium text-foreground">
+              {t("hero.badge")}</span>
           </div>
 
           {/* Main headline */}
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-balance leading-tight">
-            Systems That <span className="text-primary">Work While You Sleep</span>
+            {t("hero.headline.line1")} <span className="text-primary">{t("hero.headline.highlight")}</span>
           </h1>
 
           {/* Subheading */}
           <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto text-pretty leading-relaxed">
-          Turn your business into a self-running engine that frees your time and drives growth — so you can focus on what matters most.
+          {t("hero.subheading")}
           </p>
 
           {/* CTA buttons */}
@@ -41,21 +43,21 @@ export function Hero() {
               size="lg" 
               className="w-full sm:w-auto text-base group hover:cursor-pointer"
                 >
-                Free Project Call
+                {t("hero.cta.primary")}
                 <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
               
               </Button>
             </a>
             <a href="#process">
               <Button size="lg" variant="outline" className="w-full sm:w-auto text-base bg-transparent">
-                How It Works
+                {t("hero.cta.secondary")}
               </Button>
             </a>
           </div>
 
           {/* Trust indicator */}
           <div className="pt-12 text-sm text-muted-foreground">
-          <p>For business owners who want growth without operational chaos.</p>
+          <p>{t("hero.trust")}</p>
           </div>
         </div>
       </div>

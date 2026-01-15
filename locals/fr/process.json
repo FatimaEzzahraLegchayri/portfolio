@@ -1,0 +1,36 @@
+{
+  "process": {
+    "sectionLabel": "Processus",
+    "title": {
+      "line1": "Du",
+      "highlight": "concept au flux de trésorerie"
+    },
+    "subtitle": "Une approche systématique qui transforme votre vision en systèmes autonomes qui génèrent des résultats.",
+    "steps": [
+      {
+        "icon": "Lightbulb",
+        "step": "01",
+        "title": "Découverte",
+        "description": "Nous commençons par comprendre votre vision, vos objectifs et votre public cible. Chaque grand projet commence par la clarté."
+      },
+      {
+        "icon": "Map",
+        "step": "02",
+        "title": "Stratégie",
+        "description": "Je développe une feuille de route claire avec des jalons, des délais et des spécifications techniques. Aucune surprise."
+      },
+      {
+        "icon": "Hammer",
+        "step": "03",
+        "title": "Construction",
+        "description": "Code propre, technologie moderne et communication constante. Vous verrez les progrès à chaque étape."
+      },
+      {
+        "icon": "Rocket",
+        "step": "04",
+        "title": "Lancement",
+        "description": "Nous déployons votre projet en toute confiance, en veillant à ce que tout fonctionne parfaitement et que vous soyez prêt pour le succès."
+      }
+    ]
+  }
+}

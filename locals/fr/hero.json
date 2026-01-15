@@ -1,0 +1,15 @@
+{
+  "hero": {
+    "badge": "Développeuse & Architecte de systèmes",
+    "headline": {
+      "line1": "Des systèmes qui",
+      "highlight": "travaillent pendant que vous dormez"
+    },
+    "subheading": "Transformez votre activité en un moteur autonome qui libère votre temps et stimule la croissance — pour vous concentrer sur l'essentiel.",
+    "cta": {
+      "primary": "Appel projet gratuit",
+      "secondary": "Comment ça marche"
+    },
+    "trust": "Pour les entrepreneurs qui veulent croître sans chaos opérationnel."
+  }
+}

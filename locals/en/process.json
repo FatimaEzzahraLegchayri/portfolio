@@ -1,0 +1,36 @@
+{
+  "process": {
+    "sectionLabel": "Process",
+    "title": {
+      "line1": "From",
+      "highlight": "Concept to Cash Flow"
+    },
+    "subtitle": "A systematic approach that transforms your vision into self-running systems that generate results.",
+    "steps": [
+      {
+        "icon": "Lightbulb",
+        "step": "01",
+        "title": "Discovery",
+        "description": "We start by understanding your vision, goals, and target audience. Every great project begins with clarity."
+      },
+      {
+        "icon": "Map",
+        "step": "02",
+        "title": "Strategy",
+        "description": "I develop a clear roadmap with milestones, timelines, and technical specifications. No surprises."
+      },
+      {
+        "icon": "Hammer",
+        "step": "03",
+        "title": "Build",
+        "description": "Clean code, modern tech, and constant communication. You'll see progress every step of the way."
+      },
+      {
+        "icon": "Rocket",
+        "step": "04",
+        "title": "Launch",
+        "description": "We deploy your project with confidence, ensuring everything works perfectly and you're set up for success."
+      }
+    ]
+  }
+}

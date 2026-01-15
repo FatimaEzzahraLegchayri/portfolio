@@ -1,55 +1,47 @@
+"use client"
+
+import React from "react"
 import { Card } from "@/components/ui/card"
-import { Globe, Rocket, Target, Zap } from "lucide-react"
+import { Globe, Rocket, Target, Zap, LucideIcon } from "lucide-react"
+import { useI18n } from '@/app/context/I18nContext';
+
+type ServiceItem = {
+  icon: string
+  title: string
+  description: string
+  number: string
+}
 
 export function Services() {
-  const services = [
-    {
-      icon: Globe,
-      title: "Website Development",
-      description:
-        "Engaging, responsive websites that drive conversions. Built with modern tech and optimized for performance.",
-      number: "01",
-    },
-    {
-      icon: Zap,
-      title: "MVP & Product Build",
-      description:
-        "Launch your product idea fast. From concept to working prototype, I build MVPs that validate your vision.",
-      number: "02",
-    },
-    {
-      icon: Target,
-      title: "Automation & Systems",
-      description:
-        "Transform manual processes into self-running workflows. Automation sequences that liberate your schedule and amplify profits..",
-      number: "03",
-    },
-    // {
-    //   icon: Rocket,
-    //   title: "Actionable Intelligence",
-    //   description:
-    //     "Systems that provide insights and actionable intelligence. Infrastructure that performs while you focus on scaling impact.",
-    //   number: "04",
-    // },
-  ]
+  const { t } = useI18n()
+
+  // Icon mapping from string names to icon components
+  const iconMap: Record<string, LucideIcon> = {
+    Globe,
+    Zap,
+    Target,
+    Rocket,
+  }
+
+  const services = (t("service.items") || []) as ServiceItem[]
 
   return (
     <section id="services" className="py-24 sm:py-32 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-4">Services</p>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-balance">Digital Solutions That Operate Independently</h2>
+          <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-4">{t("service.sectionLabel")}</p>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-balance">{t("service.title")}</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty leading-relaxed">
-            Whether you need a high-converting site or time-saving automation — I develop infrastructure that performs while you focus on what matters.
+            {t("service.subtitle")}
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-3 lg:grid-cols-3 gap-6 ">
-          {services.map((service) => {
-            const Icon = service.icon
+        <div className="grid sm:grid-cols-3 lg:grid-cols-3 gap-6">
+          {services.map((service, index) => {
+            const Icon = iconMap[service.icon] || Globe
             return (
               <Card
-                key={service.number}
+                key={service.number || index}
                 className="p-6 lg:p-8 bg-card hover:bg-accent/50 transition-all duration-300 group cursor-pointer border-border hover:border-primary/50"
               >
                 <div className="flex flex-col h-full">

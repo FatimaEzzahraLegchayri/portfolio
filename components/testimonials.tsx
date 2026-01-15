@@ -1,62 +1,29 @@
+"use client"
+
 import { Card } from "@/components/ui/card"
 import { Star, Quote } from "lucide-react"
+import { useI18n } from '@/app/context/I18nContext';
 
 export function Testimonials() {
-  const testimonials = [
-    {
-      name: "Sarah El Ouakil",
-      role: "Founder, Artisan Workshop Co.",
-      content:
-        "The automation system freed up 15+ hours per week. I went from managing every booking manually to focusing on scaling my business. Revenue increased 40% in the first quarter.",
-      rating: 5,
-    },
-    {
-      name: "Mohammed El Ouali",
-      role: "CEO, Budget Tracker Platform",
-      content:
-        "From concept to launch in 6 weeks. The MVP validated our idea faster than we imagined, and the infrastructure handles growth seamlessly. Best investment we made.",
-      rating: 5,
-    },
-    {
-      name: "Loubna El Boussiri",
-      role: "Business Owner, Craft Studio",
-      content:
-        "Our website went from a brochure to a selling engine. Bookings increased 200% in the first month. The system runs itself — I check in weekly, not daily.",
-      rating: 5,
-    },
-    {
-      name: "Karima Alami",
-      role: "Entrepreneur, My Space",
-      content:
-        "Finally, a developer who understands business outcomes, not just code. The automation replaced 3 manual processes and cut operational costs by 30%. Game changer.",
-      rating: 5,
-    },
-    {
-      name: "Ayoub Zein",
-      role: "Founder, Atelier Zein",
-      content:
-        "Professional, results-driven, and genuinely invested in our success. The website converts visitors into clients consistently. We've scaled without adding staff.",
-      rating: 5,
-    },
-    {
-      name: "Zineb Motaki",
-      role: "Startup Founder",
-      content:
-        "The systems work 24/7 without supervision. I can focus on strategy instead of operations. This is exactly what I needed to scale — reliable infrastructure that performs.",
-      rating: 5,
-    },
-  ]
+  const { t } = useI18n()
+
+  const testimonials = (t("testimonials.items") || []) as Array<{
+    name: string
+    role: string
+    content: string
+    rating: number
+  }>
 
   return (
     <section className="py-24 sm:py-32 px-4 sm:px-6 lg:px-8 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-4">Testimonials</p>
+          <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-4">{t("testimonials.sectionLabel")}</p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-balance">
-            Trusted by Business Owners Who <span className="text-primary">Scale Without Chaos</span>
+            {t("testimonials.title.line1")} <span className="text-primary">{t("testimonials.title.highlight")}</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty leading-relaxed">
-            Real results from entrepreneurs who transformed their operations and accelerated growth.
+            {t("testimonials.subtitle")}
           </p>
         </div>
 
@@ -99,7 +66,7 @@ export function Testimonials() {
         {/* Trust indicator */}
         <div className="mt-16 text-center">
           <p className="text-sm text-muted-foreground">
-            Join <span className="font-semibold text-foreground">30+</span> business owners who've transformed their operations
+            {t("testimonials.trust.before")}<span className="font-semibold text-foreground">{t("testimonials.trust.number")}</span>{t("testimonials.trust.after")}
           </p>
         </div>
       </div>

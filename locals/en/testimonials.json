@@ -1,0 +1,53 @@
+{
+  "testimonials": {
+    "sectionLabel": "Testimonials",
+    "title": {
+      "line1": "Trusted by Business Owners Who",
+      "highlight": "Scale Without Chaos"
+    },
+    "subtitle": "Real results from entrepreneurs who transformed their operations and accelerated growth.",
+    "trust": {
+      "before": "Join ",
+      "number": "30+",
+      "after": " business owners who've transformed their operations"
+    },
+    "items": [
+      {
+        "name": "Sarah El Ouakil",
+        "role": "Founder, Artisan Workshop Co.",
+        "content": "The automation system freed up 15+ hours per week. I went from managing every booking manually to focusing on scaling my business. Revenue increased 40% in the first quarter.",
+        "rating": 5
+      },
+      {
+        "name": "Mohammed El Ouali",
+        "role": "CEO, Budget Tracker Platform",
+        "content": "From concept to launch in 6 weeks. The MVP validated our idea faster than we imagined, and the infrastructure handles growth seamlessly. Best investment we made.",
+        "rating": 5
+      },
+      {
+        "name": "Loubna El Boussiri",
+        "role": "Business Owner, Craft Studio",
+        "content": "Our website went from a brochure to a selling engine. Bookings increased 200% in the first month. The system runs itself — I check in weekly, not daily.",
+        "rating": 5
+      },
+      {
+        "name": "Karima Alami",
+        "role": "Entrepreneur, My Space",
+        "content": "Finally, a developer who understands business outcomes, not just code. The automation replaced 3 manual processes and cut operational costs by 30%. Game changer.",
+        "rating": 5
+      },
+      {
+        "name": "Ayoub Zein",
+        "role": "Founder, Atelier Zein",
+        "content": "Professional, results-driven, and genuinely invested in our success. The website converts visitors into clients consistently. We've scaled without adding staff.",
+        "rating": 5
+      },
+      {
+        "name": "Zineb Motaki",
+        "role": "Startup Founder",
+        "content": "The systems work 24/7 without supervision. I can focus on strategy instead of operations. This is exactly what I needed to scale — reliable infrastructure that performs.",
+        "rating": 5
+      }
+    ]
+  }
+}
