@@ -77,14 +77,14 @@ export function Portfolio() {
                   alt={project.title}
                   className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-4">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-100 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-4">
                   <a
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-2 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30 transition-colors"
                   >
-                    <ExternalLink className="w-5 h-5 text-white" />
+                    <ExternalLink className="w-5 h-5 text-black" />
                   </a>
                 </div>
               </div>
